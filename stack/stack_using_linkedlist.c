@@ -54,6 +54,9 @@ void display() {
 }
 
 void peak(){
+    if(top == NULL){
+        printf("Stack is empty.");
+    }
     struct stack*temp = top;
     printf("Top element of stack is %d", temp->data);
 
